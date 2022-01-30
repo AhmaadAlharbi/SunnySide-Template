@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SunnySide | Template</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <img src="images/icon-hamburger.svg" id="burger" alt="" />
+        </nav>
+      </div>
+      <div class="mobile-nav hide" id="mobile-nav">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="landing">
+        <h1>We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="" />
+      </div>
+    </header>
+    <!--section transform-->
+    <section class="transform">
+      <div class="">
+        <div class="main-content">
+          <div class="text">
+            <h2>
+              Transform your <br />
+              brand
+            </h2>
+            <p>
+              We are a full-service creative agency specializing in<br />
+              helping brands grow fast. Engage your clients through<br />
+              compelling visuals that do most of the marketing for you.
+            </p>
+            <a href="">learn more</a>
+          </div>
+          <div class="img">
+            <img src="images/desktop/image-transform.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end Section Transform-->
+    <section class="stand-out">
+      <div class="">
+        <div class="main-content">
+          <div class="img">
+            <img src="images/desktop/image-stand-out.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h2>Stand out to the<br />right audience</h2>
+            <p>
+              Using a collaborative formula of designers, researchers,<br />
+              photographers, videographers, and copywriters, we'll<br />
+              build and extend your brand in digital places.
+            </p>
+            <a href="">learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const burger = document.querySelector("#burger");
+      const mobileNav = document.querySelector("#mobile-nav");
+
+      burger.addEventListener("click", () => {
+        mobileNav.classList.toggle("hide");
+      });
+    </script>
+  </body>
+</html>
