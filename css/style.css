@@ -346,9 +346,17 @@ header .nav-links ul li:nth-child(4) > a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
 .transform,
 .stand-out {
   padding-bottom: 0;
+}
+.stand-out {
+  transform: translateY(-4px);
 }
 .transform img {
   transform: scaleX(1.8);
@@ -365,10 +373,32 @@ header .nav-links ul li:nth-child(4) > a {
   position: relative;
   left: 160px;
 }
+@media (max-width: 992px) {
+  .transform .main-content .text {
+    position: relative;
+    left: 0;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  .transform .main-content .text h2 {
+    font-size: 40px;
+  }
+}
 .stand-out .main-content .text {
   position: relative;
   right: 160px;
   flex-basis: 400px;
+}
+@media (max-width: 992px) {
+  .stand-out .main-content .text {
+    position: relative;
+    left: 0;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  .stand-out .main-content .text h2 {
+    font-size: 40px;
+  }
 }
 
 .stand-out img {
@@ -405,4 +435,74 @@ header .nav-links ul li:nth-child(4) > a {
   font-weight: bold;
   font-family: "Fraunces", serif;
   background: hsl(7, 99%, 70%);
+}
+/*design*/
+.design {
+  transform: translateY(-7px);
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
+}
+.graphic {
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 897px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.graphic .g-text {
+  transform: translateY(160px);
+  -webkit-transform: translateY(160px);
+  -moz-transform: translateY(160px);
+  -ms-transform: translateY(160px);
+  -o-transform: translateY(160px);
+}
+
+.g-text h3 {
+  color: hsl(167, 40%, 24%);
+  font-size: 40px;
+  font-family: "Fraunces", serif;
+}
+
+.g-text p {
+  color: hsl(167, 40%, 24%);
+  margin: 20px 0;
+  line-height: 1.7;
+}
+
+.photo {
+  background-image: url(../images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 897px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+.photo .p-text {
+  transform: translateY(160px);
+  -webkit-transform: translateY(160px);
+  -moz-transform: translateY(160px);
+  -ms-transform: translateY(160px);
+  -o-transform: translateY(160px);
+}
+
+.p-text h3 {
+  color: hsl(198, 62%, 26%);
+  font-size: 40px;
+  font-family: "Fraunces", serif;
+}
+
+.p-text p {
+  color: hsl(212, 27%, 19%);
+  margin: 20px 0;
+  line-height: 1.7;
 }
